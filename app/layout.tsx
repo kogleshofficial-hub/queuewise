@@ -1,7 +1,7 @@
 import type { Metadata } from 'next'
 import './globals.css'
 
-const siteUrl = 'https://queuewise-kogleshofficial-hubs-projects.vercel.app'
+const siteUrl = 'https://queuewise-app.vercel.app'
 
 export const metadata: Metadata = {
   metadataBase: new URL(siteUrl),
@@ -11,6 +11,7 @@ export const metadata: Metadata = {
   authors: [{ name: 'Koglesh R. Murugan' }],
   creator: 'Koglesh R. Murugan',
   applicationName: 'QueueWise',
+  icons: { icon: '/icon.svg', apple: '/icon.svg' },
   openGraph: {
     title: 'QueueWise — Know the queue before you go',
     description: 'See recent community-reported waiting times at real-world services near you.',
