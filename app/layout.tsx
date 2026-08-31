@@ -11,6 +11,7 @@ export const metadata: Metadata = {
   authors: [{ name: 'Koglesh R. Murugan' }],
   creator: 'Koglesh R. Murugan',
   applicationName: 'QueueWise',
+  verification: { google: 'LI6z3Avdq6RsVP2faZ6nlhcbRwvnMIdjJkrSBygvnZM' },
   icons: { icon: '/icon.svg', apple: '/icon.svg' },
   openGraph: {
     title: 'QueueWise — Know the queue before you go',
