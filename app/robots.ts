@@ -1,7 +1,8 @@
 import type { MetadataRoute } from 'next'
 
+const baseUrl = 'https://queuewise-app.vercel.app'
+
 export default function robots(): MetadataRoute.Robots {
-  const baseUrl = 'https://queuewise-kogleshofficial-hubs-projects.vercel.app'
   return {
     rules: { userAgent: '*', allow: '/' },
     sitemap: `${baseUrl}/sitemap.xml`,
