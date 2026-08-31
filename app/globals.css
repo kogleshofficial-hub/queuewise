@@ -19,11 +19,11 @@ h1 { font-size:clamp(46px, 7vw, 82px); line-height:.93; letter-spacing:-.065em; 
 .btn:disabled { opacity:.55; cursor:not-allowed; }
 .hero-card { background:#111; color:#fff; border-radius:28px; padding:26px; box-shadow:0 24px 70px rgba(0,0,0,.14); }
 .hero-card small { color:#aaa; }
-.signal { display:flex; justify-content:space-between; align-items:end; margin-top:24px; padding-bottom:18px; border-bottom:1px solid #333; }
+.signal { display:flex; justify-content:space-between; align-items:flex-end; margin-top:24px; padding-bottom:18px; border-bottom:1px solid #333; }
 .signal strong { font-size:45px; letter-spacing:-.05em; }
 .dot { width:11px; height:11px; border-radius:50%; display:inline-block; margin-right:7px; background:#a5df62; }
 .section { max-width:1180px; margin:0 auto; padding:45px 24px 90px; }
-.section-head { display:flex; justify-content:space-between; gap:20px; align-items:end; margin-bottom:22px; }
+.section-head { display:flex; justify-content:space-between; gap:20px; align-items:flex-end; margin-bottom:22px; }
 .section h2 { font-size:34px; letter-spacing:-.04em; margin:0; }
 .muted { color:#777; }
 .search { display:flex; gap:10px; margin-bottom:18px; }
@@ -43,7 +43,7 @@ h1 { font-size:clamp(46px, 7vw, 82px); line-height:.93; letter-spacing:-.065em; 
 .empty { text-align:center; padding:52px 20px; background:#fff; border:1px dashed #d8d7d1; border-radius:18px; color:#666; }
 .footer { border-top:1px solid #e0dfda; padding:25px 24px 40px; color:#777; font-size:13px; }
 .footer-inner { max-width:1180px; margin:auto; display:flex; justify-content:space-between; gap:20px; flex-wrap:wrap; }
-.footer-inner::after { content:'Created By Koglesh R. Murugan'; flex-basis:100%; text-align:center; padding-top:14px; border-top:1px solid #ecebe7; color:#555; font-weight:700; }
+.footer-credit { flex-basis:100%; text-align:center; padding-top:14px; border-top:1px solid #ecebe7; color:#555; font-weight:700; }
 .modal-backdrop { position:fixed; inset:0; background:rgba(0,0,0,.42); display:flex; align-items:center; justify-content:center; padding:20px; z-index:10; }
 .modal { width:min(560px,100%); background:#fff; border-radius:22px; padding:24px; max-height:90vh; overflow:auto; }
 .modal h3 { margin:0 0 5px; font-size:25px; }
