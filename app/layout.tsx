@@ -2,6 +2,7 @@ import type { Metadata } from 'next'
 import './globals.css'
 
 const siteUrl = 'https://queuewise-app.vercel.app'
+const googleVerification = 'LI6z3Avdq6RsVP2faZ6nlhcbRwvnMIdjJkrSBygvnZM'
 
 export const metadata: Metadata = {
   metadataBase: new URL(siteUrl),
@@ -11,7 +12,7 @@ export const metadata: Metadata = {
   authors: [{ name: 'Koglesh R. Murugan' }],
   creator: 'Koglesh R. Murugan',
   applicationName: 'QueueWise',
-  verification: { google: 'LI6z3Avdq6RsVP2faZ6nlhcbRwvnMIdjJkrSBygvnZM' },
+  verification: { google: googleVerification },
   icons: { icon: '/icon.svg', apple: '/icon.svg' },
   openGraph: {
     title: 'QueueWise — Know the queue before you go',
@@ -31,6 +32,9 @@ export const metadata: Metadata = {
 export default function RootLayout({ children }: Readonly<{ children: React.ReactNode }>) {
   return (
     <html lang="en">
+      <head>
+        <meta name="google-site-verification" content={googleVerification} />
+      </head>
       <body>{children}</body>
     </html>
   )
