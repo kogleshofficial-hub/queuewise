@@ -1,9 +1,10 @@
 import { createClient } from '@supabase/supabase-js'
 
-const url = process.env.NEXT_PUBLIC_SUPABASE_URL
-const key = process.env.NEXT_PUBLIC_SUPABASE_PUBLISHABLE_KEY
+// The publishable key is safe for browser use when database RLS is correctly configured.
+// Environment variables remain the preferred deployment configuration and override these fallbacks.
+const url = process.env.NEXT_PUBLIC_SUPABASE_URL || 'https://idvcuvvocxnovybhwykd.supabase.co'
+const key = process.env.NEXT_PUBLIC_SUPABASE_PUBLISHABLE_KEY || 'sb_publishable_6ySWbv0gikCeNFnIaonMiA_zMmokdj_'
 
 export function getSupabase() {
-  if (!url || !key) throw new Error('Supabase environment variables are missing.')
   return createClient(url, key, { auth: { persistSession: false } })
 }
