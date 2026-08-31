@@ -16,6 +16,7 @@ h1 { font-size:clamp(46px, 7vw, 82px); line-height:.93; letter-spacing:-.065em; 
 .btn { border:0; border-radius:13px; padding:13px 18px; font-weight:800; text-decoration:none; display:inline-flex; align-items:center; justify-content:center; }
 .btn-primary { background:#111; color:#fff; }
 .btn-secondary { background:#fff; color:#111; border:1px solid #deded9; }
+.btn:disabled { opacity:.55; cursor:not-allowed; }
 .hero-card { background:#111; color:#fff; border-radius:28px; padding:26px; box-shadow:0 24px 70px rgba(0,0,0,.14); }
 .hero-card small { color:#aaa; }
 .signal { display:flex; justify-content:space-between; align-items:end; margin-top:24px; padding-bottom:18px; border-bottom:1px solid #333; }
@@ -41,7 +42,8 @@ h1 { font-size:clamp(46px, 7vw, 82px); line-height:.93; letter-spacing:-.065em; 
 .meta { color:#777; font-size:13px; line-height:1.5; }
 .empty { text-align:center; padding:52px 20px; background:#fff; border:1px dashed #d8d7d1; border-radius:18px; color:#666; }
 .footer { border-top:1px solid #e0dfda; padding:25px 24px 40px; color:#777; font-size:13px; }
-.footer-inner { max-width:1180px; margin:auto; display:flex; justify-content:space-between; gap:20px; }
+.footer-inner { max-width:1180px; margin:auto; display:flex; justify-content:space-between; gap:20px; flex-wrap:wrap; }
+.footer-inner::after { content:'Created By Koglesh R. Murugan'; flex-basis:100%; text-align:center; padding-top:14px; border-top:1px solid #ecebe7; color:#555; font-weight:700; }
 .modal-backdrop { position:fixed; inset:0; background:rgba(0,0,0,.42); display:flex; align-items:center; justify-content:center; padding:20px; z-index:10; }
 .modal { width:min(560px,100%); background:#fff; border-radius:22px; padding:24px; max-height:90vh; overflow:auto; }
 .modal h3 { margin:0 0 5px; font-size:25px; }
